@@ -1058,7 +1058,8 @@ Rules:
 6. CRITICAL: Never hallucinate columns. You can ONLY select 'category_name' from product_categories, 'place_name' from purchase_places, and 'invoice_date', 'price', 'quantity' from invoices. Never reference 'category_name' on purchase_places or invoices.
 7. To extract the year from invoice_date, use 'EXTRACT(YEAR FROM T1.invoice_date)'. To extract the month, use 'EXTRACT(MONTH FROM T1.invoice_date)'.
 8. CRITICAL GROUP BY RULE: Every column in the SELECT clause that is NOT inside an aggregate function (like SUM, COUNT, MIN, MAX, AVG) MUST be included in the GROUP BY clause. For example, if you write 'SELECT T2.category_name, EXTRACT(YEAR FROM T1.invoice_date), SUM(...)', you must use 'GROUP BY T2.category_name, EXTRACT(YEAR FROM T1.invoice_date)'.
-9. Mapping of high-level business terms to columns:
+9. CRITICAL SIMPLICITY RULE: Keep queries simple. When asked to show sales or revenue trends, write a simple SELECT of EXTRACT(YEAR FROM T1.invoice_date) or EXTRACT(MONTH FROM T1.invoice_date) and SUM(T1.price * T1.quantity). Do not invent complex ratios, percentages, or write divisions unless the user explicitly requests them.
+10. Mapping of high-level business terms to columns:
    - "sales", "revenue", "sales volume" = SUM(T1.price * T1.quantity)
    - "unit", "item", "product" = T2.category_name (from product_categories)
    - "years", "by year", "over time" = EXTRACT(YEAR FROM T1.invoice_date)
