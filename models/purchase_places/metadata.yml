@@ -1,0 +1,12 @@
+name: purchase_places
+table_reference:
+  catalog: shopping_data
+  schema: main
+  table: purchase_places
+primary_key: place_id
+columns:
+  - name: place_id
+    type: INTEGER
+    is_primary_key: true
+  - name: place_name
+    type: VARCHAR

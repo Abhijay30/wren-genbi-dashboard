@@ -1,0 +1,135 @@
+{
+  "catalog": "wren",
+  "schema": "public",
+  "models": [
+    {
+      "name": "customers",
+      "tableReference": {
+        "catalog": "shopping_data",
+        "schema": "main",
+        "table": "customers"
+      },
+      "primaryKey": "customer_id",
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "INTEGER",
+          "isPrimaryKey": true
+        }
+      ]
+    },
+    {
+      "name": "invoices",
+      "tableReference": {
+        "catalog": "shopping_data",
+        "schema": "main",
+        "table": "invoices"
+      },
+      "primaryKey": "invoice_no",
+      "columns": [
+        {
+          "name": "invoice_no",
+          "type": "VARCHAR",
+          "isPrimaryKey": true
+        },
+        {
+          "name": "customer_id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "invoice_date",
+          "type": "DATE"
+        },
+        {
+          "name": "category_id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "price",
+          "type": "DECIMAL"
+        },
+        {
+          "name": "quantity",
+          "type": "INTEGER"
+        },
+        {
+          "name": "place_id",
+          "type": "INTEGER"
+        }
+      ]
+    },
+    {
+      "name": "product_categories",
+      "tableReference": {
+        "catalog": "shopping_data",
+        "schema": "main",
+        "table": "product_categories"
+      },
+      "primaryKey": "category_id",
+      "columns": [
+        {
+          "name": "category_id",
+          "type": "INTEGER",
+          "isPrimaryKey": true
+        },
+        {
+          "name": "category_name",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "name": "purchase_places",
+      "tableReference": {
+        "catalog": "shopping_data",
+        "schema": "main",
+        "table": "purchase_places"
+      },
+      "primaryKey": "place_id",
+      "columns": [
+        {
+          "name": "place_id",
+          "type": "INTEGER",
+          "isPrimaryKey": true
+        },
+        {
+          "name": "place_name",
+          "type": "VARCHAR"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "name": "invoices_customers",
+      "models": [
+        "invoices",
+        "customers"
+      ],
+      "joinType": "MANY_TO_ONE",
+      "condition": "invoices.customer_id = customers.customer_id"
+    },
+    {
+      "name": "invoices_product_categories",
+      "models": [
+        "invoices",
+        "product_categories"
+      ],
+      "joinType": "MANY_TO_ONE",
+      "condition": "invoices.category_id = product_categories.category_id"
+    },
+    {
+      "name": "invoices_purchase_places",
+      "models": [
+        "invoices",
+        "purchase_places"
+      ],
+      "joinType": "MANY_TO_ONE",
+      "condition": "invoices.place_id = purchase_places.place_id"
+    }
+  ],
+  "views": [],
+  "cubes": [],
+  "dataSource": "duckdb",
+  "layoutVersion": 3
+}

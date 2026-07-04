@@ -1,0 +1,22 @@
+name: invoices
+table_reference:
+  catalog: shopping_data
+  schema: main
+  table: invoices
+primary_key: invoice_no
+columns:
+  - name: invoice_no
+    type: VARCHAR
+    is_primary_key: true
+  - name: customer_id
+    type: INTEGER
+  - name: invoice_date
+    type: DATE
+  - name: category_id
+    type: INTEGER
+  - name: price
+    type: DECIMAL
+  - name: quantity
+    type: INTEGER
+  - name: place_id
+    type: INTEGER

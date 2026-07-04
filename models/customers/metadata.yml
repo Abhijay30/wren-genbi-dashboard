@@ -1,0 +1,10 @@
+name: customers
+table_reference:
+  catalog: shopping_data
+  schema: main
+  table: customers
+primary_key: customer_id
+columns:
+  - name: customer_id
+    type: INTEGER
+    is_primary_key: true

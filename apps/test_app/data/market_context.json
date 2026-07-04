@@ -1,0 +1,119 @@
+[
+    {
+        "keywords": [
+            "january",
+            "jan",
+            "slump",
+            "drop",
+            "post-holiday"
+        ],
+        "context": "Retail sales typically experience a major post-holiday slump in January across all regions. Consumers reduce discretionary spending after heavy holiday purchases in November and December. In addition, credit card bills from holiday shopping arrive, prompting tighter budgets."
+    },
+    {
+        "keywords": [
+            "july",
+            "jul",
+            "summer",
+            "mid-year",
+            "peak"
+        ],
+        "context": "July is a prime retail month characterized by mid-summer clearance sales (such as Amazon Prime Day and competing department store promotions). It also marks the early phase of the 'Back-to-School' shopping season, which is the second-largest consumer spending event of the year."
+    },
+    {
+        "keywords": [
+            "november",
+            "nov",
+            "black friday",
+            "cyber monday",
+            "spike",
+            "peak"
+        ],
+        "context": "November is dominated by global shopping festivals, including Singles' Day, Black Friday, and Cyber Monday. Retailers offer massive promotional discounts, leading to the highest volume of annual transactions, particularly in product categories like apparel and electronics."
+    },
+    {
+        "keywords": [
+            "december",
+            "dec",
+            "christmas",
+            "holiday",
+            "winter",
+            "spike"
+        ],
+        "context": "December is the traditional holiday shopping peak. Driven by Christmas and year-end gift-giving, retail revenues surge. Online delivery channels experience peak capacity, and mall stores see heavy foot traffic up until Christmas Eve."
+    },
+    {
+        "keywords": [
+            "2021",
+            "supply chain",
+            "post-covid",
+            "reopening"
+        ],
+        "context": "Throughout 2021, the retail market witnessed a post-COVID reopening boom. However, global supply chains suffered severe bottlenecks, port congestions, and container shortages, leading to inventory delays and price increases for apparel and shoes."
+    },
+    {
+        "keywords": [
+            "2022",
+            "inflation",
+            "interest rates",
+            "drop",
+            "decrease"
+        ],
+        "context": "In 2022, global markets experienced soaring inflation and rapid interest rate hikes by central banks. This severely reduced consumer disposable income. Discretionary spending on products like luxury clothing, bags, and shoes slowed down as households prioritized essentials."
+    },
+    {
+        "keywords": [
+            "2023",
+            "rebound",
+            "digital",
+            "omnichannel"
+        ],
+        "context": "2023 marked the rise of 'omnichannel' retail as physical mall traffic rebounded completely, while online platforms integrated digital wallets and faster logistics to maintain high volumes."
+    },
+    {
+        "keywords": [
+            "2024",
+            "e-commerce",
+            "promotions"
+        ],
+        "context": "In 2024, online sales platforms dominated the retail space with continuous micro-promotions and AI-targeted recommendations. Consumers focused heavily on value-for-money deals."
+    },
+    {
+        "keywords": [
+            "2025",
+            "boutique",
+            "downtown",
+            "sustainability"
+        ],
+        "context": "2025 saw a strong consumer shift toward sustainable and ethical shopping, favoring local downtown boutique stores over massive fast-fashion mall chains."
+    },
+    {
+        "keywords": [
+            "2026",
+            "growth",
+            "stabilization"
+        ],
+        "context": "In 2026, retail markets stabilized with moderate inflation and steady consumer confidence, driving consistent growth in mid-range apparel categories."
+    },
+    {
+        "keywords": [
+            "pants",
+            "apparel",
+            "clothing"
+        ],
+        "context": "Pants and trousers represent essential daily wear. Sales trends show consistent baseline purchases throughout the year, with notable spikes during back-to-school (July/August) and winter holiday seasons (November/December)."
+    },
+    {
+        "keywords": [
+            "shoes",
+            "footwear"
+        ],
+        "context": "Shoes and footwear purchases are highly seasonal. Winter boots sell heavily in November and December, while running shoes and sneakers spike during spring and back-to-school summer clearances (July)."
+    },
+    {
+        "keywords": [
+            "bags",
+            "accessories"
+        ],
+        "context": "Bags and accessories are considered luxury or discretionary gift items. Consequently, their sales are highly concentrated around holiday gift-giving seasons, particularly late November and December."
+    }
+]

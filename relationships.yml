@@ -1,0 +1,19 @@
+relationships:
+  - name: invoices_customers
+    models:
+      - invoices
+      - customers
+    join_type: MANY_TO_ONE
+    condition: invoices.customer_id = customers.customer_id
+  - name: invoices_product_categories
+    models:
+      - invoices
+      - product_categories
+    join_type: MANY_TO_ONE
+    condition: invoices.category_id = product_categories.category_id
+  - name: invoices_purchase_places
+    models:
+      - invoices
+      - purchase_places
+    join_type: MANY_TO_ONE
+    condition: invoices.place_id = purchase_places.place_id

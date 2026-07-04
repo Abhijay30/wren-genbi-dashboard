@@ -1,0 +1,12 @@
+name: product_categories
+table_reference:
+  catalog: shopping_data
+  schema: main
+  table: product_categories
+primary_key: category_id
+columns:
+  - name: category_id
+    type: INTEGER
+    is_primary_key: true
+  - name: category_name
+    type: VARCHAR
